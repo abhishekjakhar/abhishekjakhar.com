@@ -16,4 +16,8 @@ const StyledLink = styled.a`
   padding: 0;
   color: var(--color-primary-600);
   cursor: pointer;
+
+  @media ${(p) => p.theme.breakpoints.mdAndSmaller} {
+    font-size: 2.2rem;
+  }
 `;

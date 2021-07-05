@@ -1,0 +1,20 @@
+---
+name: "Bind Polyfill"
+description: "Writing a polyfill for bind is famous interview question."
+category: "JavaScript"
+---
+
+```js
+if (!Function.prototype.bind) {
+  Function.prototype.bind = function () {
+    const thatFunc = this;
+    const thatArg = arguments[0];
+    const outerArgs = [...arguments].slice(1);
+    return function () {
+      const innerArgs = [...arguments];
+      const funcArgs = [...outerArgs, ...innerArgs];
+      thatFunc.apply(thatArg, funcArgs);
+    };
+  };
+}
+```

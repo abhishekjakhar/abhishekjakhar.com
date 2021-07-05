@@ -32,6 +32,10 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   margin-left: 2.4rem;
+
+  @media ${(p) => p.theme.breakpoints.mdAndSmaller} {
+    margin-left: 1.6rem;
+  }
 `;
 
 const ListItemLink = styled.a`

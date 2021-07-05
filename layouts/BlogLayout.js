@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import StandardLayout from "@components/StandardLayout/StandardLayout";
 import MaxWidthWrapper from "@components/MaxWidthWrapper/MaxWidthWrapper";
+import Heading from "@components/Heading/Heading";
 
 export default function BlogLayout({ children, frontMatter }) {
   return (

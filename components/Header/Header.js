@@ -7,14 +7,9 @@ export default function Header() {
   return (
     <Wrapper>
       <Left>
-        <MainLogo>
-          <Logo />
-        </MainLogo>
+        <Logo />
       </Left>
-      <RightDesktop>
-        <Navigation />
-      </RightDesktop>
-      <RightMobile></RightMobile>
+      <Navigation />
     </Wrapper>
   );
 }
@@ -32,18 +27,14 @@ const Left = styled.div`
   align-items: baseline;
 `;
 
-const MainLogo = styled.div`
-  margin-right: 3.6rem;
-`;
+// const RightDesktop = styled.div`
+//   @media ${(p) => p.theme.breakpoints.mobile} {
+//     display: none;
+//   }
+// `;
 
-const RightDesktop = styled.div`
-  @media ${(p) => p.theme.breakpoints.mobile} {
-    display: none;
-  }
-`;
-
-const RightMobile = styled.div`
-  @media ${(p) => p.theme.breakpoints.desktop} {
-    display: none;
-  }
-`;
+// const RightMobile = styled.div`
+//   @media ${(p) => p.theme.breakpoints.desktop} {
+//     display: none;
+//   }
+// `;

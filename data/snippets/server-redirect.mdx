@@ -1,0 +1,26 @@
+---
+name: "Server Redirect"
+description: "Redirecting from server in NextJS."
+category: "Next"
+---
+
+```jsx
+import { getSession } from "@auth0/nextjs-auth0";
+
+export async function getServerSideProps({ req, res }) {
+  const session = await getSession(req, res);
+
+  if (session && session?.user) {
+    return {
+      redirect: {
+        permanent: true,
+        destination: "/dashboard",
+      },
+    };
+  }
+
+  return {
+    props: {},
+  };
+}
+```
