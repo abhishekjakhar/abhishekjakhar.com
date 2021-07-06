@@ -1,10 +1,26 @@
 ---
-name: "Bind Polyfill"
-description: "Writing a polyfill for bind is famous interview question."
+name: "Bind polyfill"
+description: "A classic interview question written in ES5 & ES6."
 category: "JavaScript"
 ---
 
 ```js
+// ES5 Syntax
+if (!Function.prototype.bind) {
+  const slice = Array.prototype.slice;
+  Function.prototype.bind = function () {
+    var thatFunc = this;
+    var thatArg = arguments[0];
+    var outerArgs = slice.call(arguments, 1);
+    return function () {
+      var innerArgs = slice.call(arguments);
+      var funcArgs = outerArgs.concat(innerArgs);
+      thatFunc.apply(thatArg, funcArgs);
+    };
+  };
+}
+
+// ES6 Syntax
 if (!Function.prototype.bind) {
   Function.prototype.bind = function () {
     const thatFunc = this;

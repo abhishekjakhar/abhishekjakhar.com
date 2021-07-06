@@ -31,7 +31,7 @@ export default function Snippets({ snippets }) {
             {
               label: "Description",
               key: "description",
-              flex: 2,
+              flex: 3,
             },
             {
               label: "Category",
