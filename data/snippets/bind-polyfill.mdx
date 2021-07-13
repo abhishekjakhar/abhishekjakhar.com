@@ -15,7 +15,7 @@ if (!Function.prototype.bind) {
     return function () {
       var innerArgs = slice.call(arguments);
       var funcArgs = outerArgs.concat(innerArgs);
-      thatFunc.apply(thatArg, funcArgs);
+      return thatFunc.apply(thatArg, funcArgs);
     };
   };
 }
@@ -29,7 +29,7 @@ if (!Function.prototype.bind) {
     return function () {
       const innerArgs = [...arguments];
       const funcArgs = [...outerArgs, ...innerArgs];
-      thatFunc.apply(thatArg, funcArgs);
+      return thatFunc.apply(thatArg, funcArgs);
     };
   };
 }
