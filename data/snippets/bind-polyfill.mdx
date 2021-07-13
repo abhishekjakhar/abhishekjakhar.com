@@ -7,7 +7,7 @@ category: "JavaScript"
 ```js
 // ES5 Syntax
 if (!Function.prototype.bind) {
-  const slice = Array.prototype.slice;
+  var slice = Array.prototype.slice;
   Function.prototype.bind = function () {
     var thatFunc = this;
     var thatArg = arguments[0];
