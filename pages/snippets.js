@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { getAllFilesFrontMatter } from "@lib/mdx";
 import styled from "styled-components";
 
@@ -10,6 +11,9 @@ import Link from "next/link";
 export default function Snippets({ snippets }) {
   return (
     <StandardLayout>
+      <Head>
+        <title>Snippets</title>
+      </Head>
       <Wrapper>
         <Heading as="h1" type="large-title">
           Snippets

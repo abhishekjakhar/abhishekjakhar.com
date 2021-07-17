@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import { getAllFilesFrontMatter } from "@lib/mdx";
 import styled from "styled-components";
 
@@ -14,6 +16,9 @@ export default function Blogs({ blogs }) {
 
   return (
     <StandardLayout>
+      <Head>
+        <title>Blogs</title>
+      </Head>
       <Wrapper>
         <Heading as="h1" type="large-title">
           Blogs

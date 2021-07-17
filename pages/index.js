@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styled from "styled-components";
 
 import StandardLayout from "@components/StandardLayout/StandardLayout";
@@ -9,6 +10,9 @@ import Heading from "@components/Heading/Heading";
 export default function Homepage() {
   return (
     <StandardLayout>
+      <Head>
+        <title>Abhishek Jakhar</title>
+      </Head>
       <Wrapper>
         <div className="mb-10">
           <Heading type="large-title" as="h1">

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styled from "styled-components";
 
 import StandardLayout from "@components/StandardLayout/StandardLayout";
@@ -7,6 +8,9 @@ import Heading from "@components/Heading/Heading";
 export default function SnippetLayout({ children, frontMatter }) {
   return (
     <StandardLayout>
+      <Head>
+        <title>{frontMatter.name}</title>
+      </Head>
       <Wrapper>
         <Hero>
           <Category>{frontMatter.category}</Category>
