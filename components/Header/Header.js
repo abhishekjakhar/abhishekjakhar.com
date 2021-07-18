@@ -26,15 +26,3 @@ const Left = styled.div`
   display: flex;
   align-items: baseline;
 `;
-
-// const RightDesktop = styled.div`
-//   @media ${(p) => p.theme.breakpoints.mobile} {
-//     display: none;
-//   }
-// `;
-
-// const RightMobile = styled.div`
-//   @media ${(p) => p.theme.breakpoints.desktop} {
-//     display: none;
-//   }
-// `;
