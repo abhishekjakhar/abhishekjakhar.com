@@ -20,10 +20,30 @@ export default function Timeline() {
       <Year>2021</Year>
       <StepContainer>
         <Step
+          title="Typescript &#x1F5A5;"
+          description="I started learning Typescript."
+        />
+        <Step
+          title="Gaming PC &#x1F3AE;"
+          description="I built my Gaming PC. Played BF2042, Warzone, Valorant and Splitgate."
+        />
+        <Step title="GYM &#x1F4AA;" description="I joined gym once again." />
+        <Step
+          title="Crypto"
+          description="I purchased my first Bitcoin &amp; Ethereum."
+        />
+        <Step
+          title="Bangalore &#x1F30F;"
+          description="I travelled to Bangalore for first Coinbase India offsite."
+        />
+        <Step
+          title="Joined Coinbase &#x1F4BC;"
+          description="I took my first remote job at Coinbase as Software Engineer."
+        />
+        <Step
           title="Portfolio &#x1F525;"
           description="I made my new portfolio using Next, MDXRemote &amp; Styled Components, where I decided to add my Blogs and Snippets."
         />
-
         <Step
           title="Test Driven Development &#x1F399;"
           description="I gave tech talk on TDD using React Testing Library, where we did live coding and made a form in React using TDD."
@@ -35,7 +55,7 @@ export default function Timeline() {
         <Step title="GYM &#x1F4AA;" description="I joined gym again." />
         <Step
           title="Warzone &amp; FIFA &#x1F3AE;"
-          description="I played lot of Warzone and FIFA in lockdown, I became very god at Warzone and reached divison one on FIFA."
+          description="I played lot of Warzone and FIFA in lockdown, I became very good at Warzone and reached divison one on FIFA."
         />
       </StepContainer>
       <Divider />
@@ -135,7 +155,7 @@ export default function Timeline() {
         />
         <Step
           title="Graduated from High School"
-          description="I never changed my school and city, I took admission here in 1999 and graduated from here."
+          description="I never changed my school and city, I took admission at Blue Bells in 1999 and graduated from here."
         />
       </StepContainer>
       <Divider />
