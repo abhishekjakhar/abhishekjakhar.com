@@ -29,10 +29,6 @@ export default function Timeline() {
         />
         <Step title="GYM &#x1F4AA;" description="I joined gym once again." />
         <Step
-          title="Crypto"
-          description="I purchased my first Bitcoin &amp; Ethereum."
-        />
-        <Step
           title="Bangalore &#x1F30F;"
           description="I travelled to Bangalore for first Coinbase India offsite."
         />
