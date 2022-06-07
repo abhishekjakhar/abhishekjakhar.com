@@ -6,31 +6,4 @@ category: "JavaScript"
 
 ```js
 // ES5 Syntax
-if (!Function.prototype.bind) {
-  var slice = Array.prototype.slice;
-  Function.prototype.bind = function () {
-    var thatFunc = this;
-    var thatArg = arguments[0];
-    var outerArgs = slice.call(arguments, 1);
-    return function () {
-      var innerArgs = slice.call(arguments);
-      var funcArgs = outerArgs.concat(innerArgs);
-      return thatFunc.apply(thatArg, funcArgs);
-    };
-  };
-}
-
-// ES6 Syntax
-if (!Function.prototype.bind) {
-  Function.prototype.bind = function () {
-    const thatFunc = this;
-    const thatArg = arguments[0];
-    const outerArgs = [...arguments].slice(1);
-    return function () {
-      const innerArgs = [...arguments];
-      const funcArgs = [...outerArgs, ...innerArgs];
-      return thatFunc.apply(thatArg, funcArgs);
-    };
-  };
-}
 ```
