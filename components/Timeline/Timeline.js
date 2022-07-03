@@ -17,17 +17,53 @@ const Step = ({ title, description }) => (
 export default function Timeline() {
   return (
     <>
+      <Year>2022</Year>
+      <StepContainer>
+        <Step
+          title="Coinbase Chat &#x1F4BC;"
+          description="Built CB Chat in react native with team which went live smoothly."
+        />
+        <Step
+          title="IDV as 2FA &#x1F4BC;"
+          description="Built IdCapture package from scratch which went live."
+        />
+
+        <Step
+          title="GYM &#x1F4AA;"
+          description="I gained lot of lean muscles and hit 70KG body weight."
+        />
+        <Step
+          title="CSS &#x1F5A5;"
+          description="I completed CSS for JavaScript developers course by Josh W Comeau"
+        />
+        <Step
+          title="Interview &#x1F5A5;"
+          description="I introduced new react interview question for Coinbase which got lot of appreciation and is being actively asked from candidates."
+        />
+        <Step
+          title="Bootcamp &#x1F4BC;"
+          description="I conducted my first bootcamp session on JavaScript at Coinbase and Internationalization at Coinbase for new joiners."
+        />
+      </StepContainer>
+      <Divider />
       <Year>2021</Year>
       <StepContainer>
         <Step
+          title="Interview &#x1F5A5;"
+          description="I started taking interviews at office."
+        />
+        <Step
           title="Typescript &#x1F5A5;"
-          description="I started learning Typescript."
+          description="I learned Typescript."
         />
         <Step
           title="Gaming PC &#x1F3AE;"
           description="I built my Gaming PC. Played BF2042, Warzone, Valorant and Splitgate."
         />
-        <Step title="GYM &#x1F4AA;" description="I joined gym once again." />
+        <Step
+          title="GYM &#x1F4AA;"
+          description="I joined gym once again at 59KG body weight."
+        />
         <Step
           title="Bangalore &#x1F30F;"
           description="I travelled to Bangalore for first Coinbase India offsite."
