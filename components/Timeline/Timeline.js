@@ -21,11 +21,11 @@ export default function Timeline() {
       <StepContainer>
         <Step
           title="Coinbase Chat &#x1F4BC;"
-          description="Built CB Chat in react native with team which went live smoothly."
+          description="Built CB Chat in React Native with team which went live smoothly."
         />
         <Step
           title="IDV as 2FA &#x1F4BC;"
-          description="Built IdCapture package from scratch which went live."
+          description="Built IdCapture package using React and TypeScript from scratch which went live."
         />
 
         <Step
