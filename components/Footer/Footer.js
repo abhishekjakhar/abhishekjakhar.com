@@ -75,7 +75,7 @@ export default function Footer() {
         <MobileOnly>
           <MobileCopyright>
             <Copyright>
-              &copy; 2021-present Abhishek Jakhar. All rights reserved.
+              &copy; 2022-present Abhishek Jakhar. All rights reserved.
             </Copyright>
           </MobileCopyright>
         </MobileOnly>
