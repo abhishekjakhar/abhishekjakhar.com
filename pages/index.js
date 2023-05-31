@@ -8,6 +8,7 @@ import Timeline from "@components/Timeline/Timeline";
 import Heading from "@components/Heading/Heading";
 
 export default function Homepage() {
+  console.log("Abhishek");
   return (
     <StandardLayout>
       <Head>
